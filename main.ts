@@ -1,3 +1,8 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenSouth, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`level2`)
+    mySprite.setPosition(88, 3)
+    scene.setBackgroundColor(12)
+})
 function gameMap1 () {
     tiles.setCurrentTilemap(tilemap`level1`)
     mySprite2 = 0
@@ -47,8 +52,8 @@ function badPath () {
         . . . . . f f f f f f . . . . . 
         `, SpriteKind.Player)
 }
-let mySprite: Sprite = null
 let mySprite2 = 0
+let mySprite: Sprite = null
 scene.setBackgroundImage(img`
     fffffffcbccffffffffffcfbddddddddddd111111111111111111111111dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddbffcddffffffcfcfffff
     fffffffccffffcffffffbfddddddddd11111111111111111111111111111111ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfccdbffffffffffffff
